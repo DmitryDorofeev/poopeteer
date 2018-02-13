@@ -1,0 +1,27 @@
+{
+  "name": "poopeteer",
+  "version": "0.0.1",
+  "description": "Zero-configuration ui-testing framework based on jest and puppeteer",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "jest",
+    "docker": "docker build -t dmitrydorofeev/poopeteer"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DmitryDorofeev/poopeteer.git"
+  },
+  "author": "Dmitry Dorofeev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DmitryDorofeev/poopeteer/issues"
+  },
+  "homepage": "https://github.com/DmitryDorofeev/poopeteer#readme",
+  "dependencies": {
+    "jest": "^22.2.2",
+    "puppeteer": "^1.0.0"
+  }
+}
