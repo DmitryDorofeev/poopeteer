@@ -3,12 +3,10 @@
   "version": "0.0.1",
   "description": "Zero-configuration ui-testing framework based on jest and puppeteer",
   "main": "index.js",
-  "directories": {
-    "example": "examples"
-  },
+  "bin": "index.js",
   "scripts": {
     "test": "jest",
-    "docker": "docker build -t dmitrydorofeev/poopeteer"
+    "docker": "docker build -t dmitrydorofeev/poopeteer ."
   },
   "repository": {
     "type": "git",

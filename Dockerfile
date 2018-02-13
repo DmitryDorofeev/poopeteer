@@ -10,17 +10,13 @@ wget https://github.com/Yelp/dumb-init/releases/download/v1.2.1/dumb-init_1.2.1_
 dpkg -i dumb-init_*.deb && rm -f dumb-init_*.deb && \
 apt-get clean && apt-get autoremove -y && rm -rf /var/lib/apt/lists/*
 
-RUN yarn global add puppeteer@1.0.0 jest && yarn cache clean
+ENV PATH="/src/tools:${PATH}"
 
-ENV NODE_PATH="/usr/local/share/.config/yarn/global/node_modules:${NODE_PATH}"
+ADD . /src
 
-ENV PATH="/tools:${PATH}"
+WORKDIR /src
 
-ADD ./tools /tools
-
-RUN chmod +x /tools/* && mkdir /screenshots
-
-WORKDIR /app
+RUN chmod +x /src/tools/* && mkdir /screenshots && npm install
 
 ENTRYPOINT ["dumb-init", "--"]
 
