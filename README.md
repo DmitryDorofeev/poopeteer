@@ -12,7 +12,7 @@ npm install -g poopeteer
 
 2. Create simple test
 
-```
+```js
 describe('awesome test', () => {
   it('something will be ok', async () => {
     page = await poopeteer.newPage()
@@ -27,4 +27,4 @@ describe('awesome test', () => {
 
 ```
 
-3. Run tests with `puppeteer` command
+3. Run tests with `poopeteer` command

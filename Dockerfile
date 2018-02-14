@@ -16,7 +16,7 @@ ADD . /src
 
 WORKDIR /src
 
-RUN chmod +x /src/tools/* && mkdir /screenshots && npm install
+RUN chmod +x /src/tools/* && mkdir /screenshots && yarn install
 
 ENTRYPOINT ["dumb-init", "--"]
 
