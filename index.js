@@ -1,4 +1,4 @@
-const jest = require('jest-cli')
+const jest = require('jest')
 const path = require('path')
 
 module.exports = () => {

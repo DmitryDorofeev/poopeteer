@@ -1,6 +1,8 @@
+const path = require('path');
+
 module.exports = {
-  globalSetup: './setup.js',
-  globalTeardown: './teardown.js',
-  testEnvironment: './env.js',
+  globalSetup: path.join(__dirname, 'setup.js'),
+  globalTeardown: path.join(__dirname, 'teardown.js'),
+  testEnvironment: path.join(__dirname, 'env.js'),
   rootDir: process.cwd()
 }
