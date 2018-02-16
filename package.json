@@ -1,6 +1,6 @@
 {
   "name": "poopeteer",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Zero-configuration ui-testing framework based on jest and puppeteer",
   "main": "index.js",
   "bin": "cli.js",
