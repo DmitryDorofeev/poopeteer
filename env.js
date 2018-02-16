@@ -1,4 +1,3 @@
-const chalk = require('chalk')
 const NodeEnvironment = require('jest-environment-node')
 const puppeteer = require('puppeteer')
 const fs = require('fs')

@@ -3,7 +3,7 @@
   "version": "0.0.2",
   "description": "Zero-configuration ui-testing framework based on jest and puppeteer",
   "main": "index.js",
-  "bin": "index.js",
+  "bin": "cli.js",
   "scripts": {
     "test": "jest",
     "docker": "docker build -t dmitrydorofeev/poopeteer ."
